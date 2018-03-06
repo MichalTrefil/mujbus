@@ -49,7 +49,11 @@ const uint8_t tCRCLo[] =
 void calcCrc(uint8_t* _msg, uint8_t _len,uint8_t* lo,uint8_t* hi)
 {
     //crc tmp;
-    uint8_t  CRCHi = 0xFF, CRCLo = 0xFF, Index, msgLen, *msgPtr;
+    uint8_t  CRCHi = 0xFF,
+             CRCLo = 0xFF,
+             Index, msgLen,
+             *msgPtr;
+
     msgLen = _len - 2;
     msgPtr = _msg;
 
